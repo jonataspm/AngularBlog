@@ -1,0 +1,28 @@
+<div>
+    <div class="container__back">
+        <hr>
+        <p [routerLink]="['']">← voltar</p>
+    </div>
+        
+    <div class="container__view">
+        <article *ngIf="found" #notFound class="container__article">
+            <div class="container__article-info">
+                <h1>{{card.title}}</h1>
+                <sub>{{card.subtitle}}</sub>
+                <div class="container__article-info-author">
+                    <p>{{card.author}} - {{card?.date}}</p>
+                </div>
+            </div>
+            <div class="container__article-content">
+                <img [src]="card.path" alt="imagem">
+                <p>{{card.content}}</p>
+            </div>
+        </article>
+        
+        <ng-template #notFound>
+            <img src="" alt="">
+            <p>404 - page was not found</p>
+        </ng-template>
+    </div>
+</div>
+    

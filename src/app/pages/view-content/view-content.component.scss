@@ -1,0 +1,59 @@
+.container{
+    &__back{
+        margin-top: 10px;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+
+        p{
+            cursor: pointer;
+        }
+    }
+
+    &__view{
+        padding: 10px 15em;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    &__article{
+
+        &-info{
+            h1{
+                font-size: 2em;
+            }
+
+            sub{
+                font-size: 1em;
+                color: rgb(187, 187, 187);
+            }
+            &-author{
+                margin: 10px 0;
+                p{
+                    font-style: italic;
+                }
+            }
+
+        }
+        &-content{
+
+            display: flex;
+            flex-direction: column;
+
+            img{
+                max-width: 100%;
+                aspect-ratio: auto 700 / 438;
+                height: auto;
+            }
+            p{
+                letter-spacing: -0.003em;
+                line-height: 28px;
+                font-size: 18px;
+                margin-top: 1.56em;
+                margin-bottom: 0.46em;
+            }
+        }
+    }
+
+}

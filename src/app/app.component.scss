@@ -1,27 +1,3 @@
-.landing{
-    display: flex;
-    gap: 20px;
-    margin-top: 20px;
-    &__recent{
-        display: flex;
-        flex-direction: column;
-        gap: 20px;
-
-        hr {  
-            border: none;           
-            height: 1px;           
-            background-color: #353535; 
-            margin: 0;              
-          } 
-    }
-}
-
-.container__app{
-    display: flex;
-    flex-direction: column  ;
-    gap: 10px;
-    padding: 10px 5em;
-    width: 100%;
-
-
+.app{
+    padding: 0px 5em;
 }

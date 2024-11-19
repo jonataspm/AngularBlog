@@ -1,15 +1,7 @@
-<div [ngClass]="isDark ? 'dark' : 'white'" class="container__app">
+<div [ngClass]="isDark ? 'dark' : 'white'" class="app">
   <header>
     <app-menu-bar></app-menu-bar>
   </header> 
-  <app-menu-title></app-menu-title>
-  <div class="landing">
-    <app-big-card [path]="bcard.path" [title]="bcard.title" [description]="bcard.description" [date]="bcard.date"/>
-    <div class="landing__recent">  
-      <ng-container *ngFor="let i of scards; let last = last">  
-        <app-small-card [path]="i.path" [title]="i.title" [description]="i.description" [date]="i.date"/> 
-        <hr *ngIf="!last">  
-      </ng-container>  
-    </div>  
-  </div>
+  <router-outlet></router-outlet>
 </div>
+
