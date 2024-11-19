@@ -1,0 +1,25 @@
+.container__big-card{
+    cursor: pointer;
+
+    border-radius: 20px;
+    width: min-content;
+    display: flex;
+    flex-direction: column;
+
+    gap: 10px;
+    
+    img{
+        width: 30em;
+    }
+    span{
+        font-size: 13px;
+        color: rgb(116, 116, 116);
+    }
+    h2{
+
+    }
+    p{
+        color: rgb(168, 168, 168);
+    }
+    
+}
